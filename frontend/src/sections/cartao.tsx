@@ -8,12 +8,12 @@ declare global {
   }
 }
 
-const CartaoCreditoVideo = () => {
+const CartaoCredito = () => {
 
   useEffect(() => {
     const initializeCardForm = async () => {
       await loadMercadoPago();
-      const mp = new window.MercadoPago('TEST-92802cfc-b4b3-490a-a8df-d59d00e795da');
+      const mp = new window.MercadoPago('TEST-9e82f1c7-0454-43fb-a7d1-f6b128a74418');
 
       const cardForm = mp.cardForm({
         amount: '1270.9',
@@ -162,4 +162,4 @@ const CartaoCreditoVideo = () => {
   );
 }
 
-export default CartaoCreditoVideo
+export default CartaoCredito
